@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Awesome"
+disqus_identifier: "awesome"
 description: "my small collection of awesome"
 header-img: img/headers/stock/wood.jpg
 order: 4
