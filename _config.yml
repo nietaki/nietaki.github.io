@@ -19,6 +19,9 @@ gems:
   - jekyll-gist
   - jekyll-paginate
 
+collections:
+- til
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign tils = site.til | sort: 'date' %}
+{% for item in tils reversed %}
+<div class="post-preview">
+    {% assign anchor_tag = item.title | slugify %}
+    <a href="#{{ anchor_tag }}" class="noul">
+        <h3 id="{{ anchor_tag }}">
+            {{ item.title }}
+        </h3>
+        <h5 class="post-subtitle">
+            {{ item.date | date: "%B %-d, %Y" }}
+        </h5>
+    </a>
+    <div class="inner_preview">
+        {{ item.content }}
+    </div>
+</div>
+<hr />
+{% endfor %}
