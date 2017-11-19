@@ -1,8 +1,9 @@
 ---
 layout: page
 link_title: "now"
-title: "What I'm doing now"
+title: "now"
 _description: "now"
+header-img: img/headers/stock/mountain.jpg
 order: 3
 ---
 

@@ -1,4 +1,5 @@
-# the Almost Done blog Jekyll migration
+# the Almost Done blog Jekyll migration [![Built with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)](http://spacemacs.org)
+
 I decided to move my blog from the age-old, insecure, complicated and ugly wordpress install to something simple and easy to work with so that I could focus on the contents more. 
 
 For now there are ~~no comments~~, no fancy galleries, categories and tags, just a series of posts.
