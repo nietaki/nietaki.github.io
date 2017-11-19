@@ -7,9 +7,9 @@ header-img: img/headers/stock/wood.jpg
 order: 4
 ---
 
-There's a bunch of projects that make my life a whole lot of better. I can only
+There's a bunch of projects that make my life a whole lot better. I can only
 preach about them to my friends so much, so here's some links to spread the word
-otherwise. Worst case scenario they'll get a SEO bump ;)
+otherwise.
 
 ### Workfowy
 
