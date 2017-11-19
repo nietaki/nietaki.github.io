@@ -2,8 +2,17 @@
 layout: page
 title: "Projects"
 _description: "projects"
+header-img: img/headers/stock/twigs.jpg
 order: 2
 ---
+
+# In Progress
+
+## [Rexbug](https://hex.pm/packages/rexbug)
+
+A thin Elixir wrapper for `:redbug` production-friendly Erlang tracing debugger.
+It tries to preserve `:redbug`'s simple and intuitive interface while making it
+more convenient to use by Elixir developers.
 
 # Done
 

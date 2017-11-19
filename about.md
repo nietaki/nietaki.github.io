@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "'Tis what I do'"
+_description: "this isn't witty"
 header-img: img/headers/samples/contact-bg.jpg
 redirect_from:
  - /foo/
