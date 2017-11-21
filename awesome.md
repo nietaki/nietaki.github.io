@@ -39,9 +39,10 @@ want and beautiful social/playlist management.
 
 ### Spacemacs
 
-[Spacemacs](http://spacemacs.org/) is a weird editor. It feels like vim, is
-built on Emacs and has a lot of community configuration in it out of the box.
-It requires [**a lot** of configuration](https://github.com/nietaki/dotty-dotfiles/blob/master/files/.spacemacs)
+[Spacemacs](http://spacemacs.org/) is a weird beast. It feels like vim, is
+built on Emacs and comes bundled with clever, community-driven configuration.
+It requires 
+[**a lot more** configuration](https://github.com/nietaki/dotty-dotfiles/blob/master/files/.spacemacs)
 and getting used to, the learning curve
 is a lot like that of EVE Online, but when the dust settles it's
 the most comprehensive editor for people who don't like to use their mouse too
@@ -49,6 +50,17 @@ much.
 
 ![EVE Online learning curve](/img/learning_curve.png)
 (yes, the axis on this image don't completely make sense)
+
+### Dash
+[Dash](https://kapeli.com/dash) is a universal API documentation browser.
+It comes with a hundreds (!) of docsets, for both language core libraries and
+third-party libraries, all under one convenient UI. It's only available
+for OSX, but the author 
+[worked with other developers](https://blog.kapeli.com/dash-for-ios-android-windows-or-linux)
+to provide alternatives for other platforms.
+
+You might not think like it's much different from googling code and
+bookmarking a handful of api docs pages, but from my experience it really is.
 
 ### Death to Stock
 
