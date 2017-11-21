@@ -53,7 +53,7 @@ much.
 
 ### Dash
 [Dash](https://kapeli.com/dash) is a universal API documentation browser.
-It comes with a hundreds (!) of docsets, for both language core libraries and
+It comes with hundreds (!) of docsets, for both language core libraries and
 third-party libraries, all under one convenient UI. It's only available
 for OSX, but the author 
 [worked with other developers](https://blog.kapeli.com/dash-for-ios-android-windows-or-linux)
