@@ -2,6 +2,7 @@
 title:      "Popsugar reading challenge"
 subtitle:   "a google spreadsheet checklist"
 date:       2015-01-04 14:00:00
+published:  false
 ---
 
 You might have seen [Popsugar's 2015 Reading Challenge](http://www.popsugar.com/love/Reading-Challenge-2015-36071458) -
