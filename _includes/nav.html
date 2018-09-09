@@ -19,7 +19,9 @@
                     <a class="noul" href="{{ site.baseurl }}/">Home</a>
                 </li>
                 {% assign sorted_pages = site.pages | sort:"order" %}
-                {% for page in sorted_pages %}{% if page.title %}{% if page.title != "404" %}
+                {% for page in sorted_pages %}
+                {% if page.title %}
+                {% if page.order >= 0 %}
                 <li>
                     <a class="noul" href="{{ page.url | prepend: site.baseurl }}">
                       {% if page.link_title %}
@@ -29,7 +31,9 @@
                       {% endif %}
                     </a>
                 </li>
-                {% endif %}{% endif %}{% endfor %}
+                {% endif %}
+                {% endif %}
+                {% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->

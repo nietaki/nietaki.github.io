@@ -1,0 +1,55 @@
+---
+layout: page
+_link_title: "one word ban"
+title: "one word ban"
+_description: "now"
+_header-img: img/headers/stock/mountain.jpg
+order: -1
+---
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+<p>
+  <textarea id="bad_words" onchange="reload_words()" onkeyup="reload_words()"></textarea>
+  <br />
+  <textarea id="post_text" onchange="validate_text()" onkeyup="validate_text()"></textarea>
+  <br />
+  <h1>bad words:
+  <br />
+  <div id="result">
+
+  </div>
+<a href="foo">this is a link</a>
+
+<script>
+ console.log('hello')
+ window.bad_words = [];
+
+ reload_words = function() {
+   console.log('reloading')
+   var text = $('textarea#bad_words').val()
+   console.log(text)
+   var get_words = R.pipe(R.split('\n'), R.map(R.trim), R.reject(R.isEmpty), R.map(R.toLower))
+
+   window.bad_words = get_words(text)
+
+   var contains_space = function(s) {return s.includes(' ')}
+   compound_words = R.filter(contains_space, window.bad_words)
+   console.log(window.bad_words)
+   console.log(compound_words)
+ }
+
+ validate_text = function() {
+   var post_text = $('textarea#post_text').val()
+   /* console.log(post_text) */
+   var post_simplified = " " + R.pipe(R.toLower, R.replace(/[^\w]/g, " "))(post_text) + " "
+   var post_contains_it = function(s) {return post_simplified.includes(" " + s + " ")}
+
+   var bad_words_in_post = R.filter(post_contains_it, window.bad_words)
+
+   /* console.log(bad_words_in_post) */
+   $('#result').html(R.join("<br />", bad_words_in_post))
+ }
+
+</script>
+</p>
+

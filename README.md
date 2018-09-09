@@ -14,4 +14,10 @@ The theme is very slightly modified official Jekyll version of the Clean Blog th
 1. `jekyll serve --watch`
 
 
+### Or on Ubuntu
+1. `sudo apt install ruby ruby-dev`
+1. `sudo gem install jekyll jekyll-redirect-from jekyll-gist jekyll-sitemap jekyll-paginate`
+1. `jekyll serve --watch`
+
+
 
