@@ -1,9 +1,9 @@
 # Site settings
 title: almost done
 email: nietaki@gmail.com
-description: "Almost Done - the (mostly) programming-themed blog."
+description: "nietaki's notes on programming"
 baseurl: ""
-url: "https://nietaki.github.io"
+url: "https://nietaki.com"
 twitter_username: nietaki
 github_username: nietaki
 #facebook_username: nietaki
