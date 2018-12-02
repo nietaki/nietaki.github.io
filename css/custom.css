@@ -11,3 +11,15 @@ td {
 .inner_preview {
   text-align: justify;
 }
+
+blockquote p {
+    margin: 20px 0px;
+}
+
+blockquote p:first-child {
+    margin-top: 0px;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0px;
+}
