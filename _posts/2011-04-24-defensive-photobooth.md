@@ -9,7 +9,7 @@ redirect_from:
 
 Some time ago, inspired by…
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/U4oB28ksiIo" frameborder="0" allowfullscreen> </iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/Jwpg-AwJ0Jc" frameborder="0" allowfullscreen> </iframe>
 
 …also known as the “Do not fuck with a hacker’s machine” clip, and the fact I started using Debian exclusively on my netbook, I decided to make preparations<!--more--> in advance for a dire situation in which my laptop is stolen/captured by insurgents, and retrieve it easier or even play a prank on them. These were my postulates:
 
