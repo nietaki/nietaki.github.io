@@ -11,9 +11,16 @@ There's a bunch of projects that make my life a whole lot better. I can only
 preach about them to my friends so much, so here's some links to spread the word
 otherwise.
 
+### Todoist
+
+[Todoist](https://todoist.com/r/jacek_krolikowski_ohbkpp) (warning, reflink)
+is quickly becoming my favourite personal task management system. It's
+simple, powerful and cross-platform. I tried many similar apps before
+but this seems to be the version that feels the best day to day.
+
 ### Workfowy
 
-[Workfowy](https://workflowy.com/invite/2148a9f5.emlx) (warning, reflink)
+[Workfowy](https://workflowy.com/invite/2148a9f5.emlx) (warning, reflink again)
 is an amazingly simple, yet powerful lists notebook (?). The lists
 can be arbitrarily nested, the items can be (un)completed back and forth and
 the whole thing works brilliantly both on web or on mobile, with offline

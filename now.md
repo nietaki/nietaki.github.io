@@ -9,12 +9,9 @@ order: 3
 
 *([here](http://nownownow.com/about)'s a description what a "now page" is for)*
 
-I'm in London, I just parted ways with [Mainframe](https://mainframe.com/), and 
-I'm joining [Curl](https://paywithcurl.com/) very soon.
+I'm in London, building [Curl](https://paywithcurl.com/).
 
-I'm working off and on on my [Rexbug](https://hex.pm/packages/rexbug) Elixir
-tracing debugger (always looking for contributors!), 
-looking at ES/CQRS and making an online version of a simple
-but awesome board game [Trax](https://boardgamegeek.com/boardgame/748/trax).
+In the evenings I train bjj at [Fightzone](https://www.fightzonelondon.co.uk/) and 
+work on [Raxx](https://github.com/crowdhailer/raxx). 
 
-Last update was January 10th 2018
+Last update was December 2nd 2018
