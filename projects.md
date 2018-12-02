@@ -8,13 +8,13 @@ order: 2
 
 # In Progress
 
+# Done
+
 ## [Rexbug](https://hex.pm/packages/rexbug)
 
 A thin Elixir wrapper for `:redbug` production-friendly Erlang tracing debugger.
 It tries to preserve `:redbug`'s simple and intuitive interface while making it
 more convenient to use by Elixir developers.
-
-# Done
 
 ## [Crawlie the crawler](https://github.com/nietaki/crawlie)
 A simple Elixir library for creating decently-performing crawlers with minimum effort.
