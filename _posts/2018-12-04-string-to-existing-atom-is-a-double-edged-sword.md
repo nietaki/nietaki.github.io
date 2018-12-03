@@ -2,7 +2,7 @@
 title:      "String.to_existing_atom/1"
 subtitle:   "...is a double-edged sword"
 disqus_identifier: "String.to_existing_atom/1 is a double-edged sword"
-date:       2018-12-03 12:00:00
+date:       2018-12-04 12:00:00
 published:  false
 ---
 
