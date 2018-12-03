@@ -115,7 +115,7 @@ are the only two values that can be stored in the `status` column.
 Time passes, features are added, refactors happen. One day we deploy to production
 (code that has behaved well on staging environment for a while and passed all
 system and unit tests with flying colours) and Appsignal starts notifying
-us of errors:
+us about errors:
 
 ```
 cannot load `"inactive"` as type MyApp.Ecto.AtomType for field `status` in schema (...)
@@ -137,7 +137,7 @@ Those modules got loaded
 when system tests were run in the staging environment (when testing scenarios with
 users getting deactivated) but not straight away in production. In production
 the modules weren't loaded (yet) and when an `inactive` user was retrieved
-from the database, the field loading errored out and breaking some features.
+from the database, the field loading errored out breaking some features.
 
 ### Fixing it
 
