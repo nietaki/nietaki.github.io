@@ -15,17 +15,13 @@ One of the examples could be the difference between
 and why iex sometimes seems to do weird things to your lists:
 
 ```elixir
-iex> l = [1, 2, 3, 104, 105]
-[1, 2, 3, 104, 105]
-iex> l = [1, 2, 3, 104, 105]
-[1, 2, 3, 104, 105]
+iex> l = [19, 7, 16, 119, 97, 116]
+[19, 7, 16, 119, 97, 116]
 iex> Enum.drop(l, 1)
-[2, 3, 104, 105]
+[7, 16, 119, 97, 116]
 iex> Enum.drop(l, 2)
-[3, 104, 105]
+[16, 119, 97, 116]
 iex> Enum.drop(l, 3)
-'hi'
-iex> 'wat'
 'wat'
 ```
 
