@@ -7,7 +7,7 @@ published:  true
 ---
 
 I'd argue Elixir has relatively few gotchas. It's a simple and consistent language
-and when you first learn it there's only a few things that are genuinely counter intuitive
+and when you first learn it there's only a few things that are genuinely counter-intuitive
 and catch you by surprise.
 
 One of the examples could be the difference between
