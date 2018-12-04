@@ -2,8 +2,8 @@
 title:      "String.to_existing_atom/1"
 subtitle:   "...is a double-edged sword"
 disqus_identifier: "String.to_existing_atom/1 is a double-edged sword"
-date:       2018-12-04 12:00:00
-published:  false
+date:       2018-12-04 13:21:00
+published:  true
 ---
 
 I'd argue Elixir has relatively few gotchas. It's a simple and consistent language
@@ -110,7 +110,7 @@ are the only two values that can be stored in the `status` column.
 
 Time passes, features are added, refactors happen. One day we deploy to production
 (code that has behaved well on staging environment for a while and passed all
-system and unit tests with flying colours) and Appsignal starts notifying
+system and unit tests with flying colours) and AppSignal starts notifying
 us about errors:
 
 ```
@@ -143,13 +143,16 @@ First we make sure the production system works - we go through some user
 scenario which uses a Module with the atoms we need. All systems are nominal again.
 Now we can approach the root cause with less urgency.
 
-There's a couple of ways of fixing the problem itself. One was the one
+There's a couple of ways of fixing the problem itself. One was
 [suggested by José](https://github.com/elixir-lang/elixir/issues/4832#issuecomment-227099444):
-Make sure whenever we need there's a chance we'll need the atoms we're
-depending on, we'll load their modules. In our case it could be doing this 
-in our `Repo` module:
+Make sure whenever there's a chance we'll need the atoms we're
+depending on, we'll load their modules. In our case we could be doing this 
+in our [`Repo`](https://hexdocs.pm/ecto/Ecto.Repo.html) module, which always 
+gets used whenever we talk to the database:
 
 ```elixir
+# in lib/my_app/repo.ex
+
 @on_load :load_atoms
 
 def load_atoms() do
@@ -162,6 +165,10 @@ def load_atoms() do
   :ok
 end
 ```
+
+You can see we're using 
+[module's `@on_load`](https://hexdocs.pm/elixir/Module.html#module-on_load)
+attribute to hook into the module's lifecycle and "cascade" the module loading.
 
 That's not the only possible solution though. Another, technically simpler
 solution is just reverting to `String.to_atom/1` when we load
@@ -181,11 +188,25 @@ The latter approach might look a bit naive, but it saves us from
 the hassle of what looks like manually tracking dependencies between
 modules.
 
-So yeah, crisis averted and we learned something!
+There's more possible approaches here: We could potentially start the
+system in 
+[embedded mode](http://erlang.org/doc/system_principles/system_principles.html#code_loading),
+where all code is loaded at startup,
+[provided we're deploying the app using releases](https://github.com/elixir-lang/elixir/issues/7208#issuecomment-358603587).
+While simplifying the app's lifecycle like this sounds like a
+clean solution, I think it's conservative to not to depend on some deployment
+details for the correctness of your app. 
+Getting started with releases requires some extra work too.
 
-### Disclaimer
+So anyways, crisis averted and we learned something!
+
+### End notes
 
 This is not actually how we model our users and it's a different entity
 which made the problem surface - it's just a simplification for the sake of the 
 blog post so I wouldn't have to get too deep into describing how we model Curl's
 domain.
+
+There's probably some even cleaner ways of solving the problem we ran into.
+If you have some ideas about them, leave a comment below, I'd love to hear
+about it!
