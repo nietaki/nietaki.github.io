@@ -8,6 +8,17 @@ order: 2
 
 # In Progress
 
+Nothing serious right now :o
+
+# Done
+
+## [Raxx](https://github.com/crowdhailer/raxx)/Ace/Raxx.Kit
+
+All three projects started by [Pete](https://github.com/CrowdHailer), presenting
+a simple and powerful alternative to the standard Elixir cowboy/Plug/Phoenix
+web stack. For a while I was contributing to them as much as I could and Raxx
+has now reached 1.0 and stabilised a bit.
+
 ## Hoplon
 
 An Elixir developer tool that helps you validate your dependencies contain no
@@ -15,14 +26,10 @@ hidden malicious code. Motivated by horror stories from the JavaScript community
 such as [this hypothetical one](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5)
 and [this very real one](https://github.com/dominictarr/event-stream/issues/116).
 
-## Raxx/Ace/Raxx.Kit
-
-All three projects started by [Pete](https://github.com/CrowdHailer), presenting
-a simple and powerful alternative to the standard Elixir cowboy/Plug/Phoenix
-web stack. They're interesting and awesome enough I started contributing to them
-as much as I can.
-
-# Done
+After 
+[presenting the project at Code BEAM STO](https://www.youtube.com/watch?v=ejAY6yWXZSc) 
+I decided to put the project on the back burner until there's more interest 
+in the subject.
 
 ## [Rexbug](https://hex.pm/packages/rexbug)
 

@@ -30,9 +30,8 @@ synchronization. All quick and dirty plans go on there.
 
 [1Password](https://1password.com/) is the password manager I use ever since
 I abandoned LastPass after they locked me out of my acount for a day or so.
-It integrates beautifully with OSX and alright with Windows. I might consider
-switching to [Bitwarden](https://bitwarden.com/) at one point in time, but
-I'm verry happy with it for now.
+It integrates beautifully with OSX, alright with Windows and good enough 
+just in a browser under Linux.
 
 ### Spotify
 
@@ -44,19 +43,17 @@ want and beautiful social/playlist management.
 [taste](https://open.spotify.com/user/nietaki/playlist/6h5WGhoFCkrmy3cGMGSGqF)
  of my playlists :D
 
-### Spacemacs
+### NeoVim
 
-[Spacemacs](http://spacemacs.org/) is a weird beast. It feels like vim, is
-built on Emacs and comes bundled with clever, community-driven configuration.
-It requires 
-[**a lot more** configuration](https://github.com/nietaki/dotty-dotfiles/blob/master/files/.spacemacs)
-and getting used to, the learning curve
-is a lot like that of EVE Online, but when the dust settles it's
-the most comprehensive editor for people who don't like to use their mouse too
-much.
+After more than a year of trying to make [Spacemacs](http://spacemacs.org/)
+work for me (with a very convoluted configuration and it crashing on me
+all the time) I decided to give (Neo)Vim a try and couldn't be happier.
 
-![EVE Online learning curve](/img/learning_curve.png)
-(yes, the axis on this image don't completely make sense)
+I wrote my [config](https://github.com/nietaki/dotty-dotfiles/tree/master/files)
+from scratch with the help of some plugins from 
+[VimAwesome](https://github.com/nietaki/dotty-dotfiles/tree/master/files).
+Now I have a nice IDE-like setup with most of the Spacemacs workflows that
+got me addicted to it and only about 5% of its headache.
 
 ### Dash
 [Dash](https://kapeli.com/dash) is a universal API documentation browser.
