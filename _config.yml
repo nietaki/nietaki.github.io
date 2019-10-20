@@ -13,11 +13,12 @@ future: true
 
 excerpt_separator: "<!--more-->"
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-gist
 
 collections:
 - til

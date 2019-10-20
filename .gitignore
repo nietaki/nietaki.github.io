@@ -6,3 +6,5 @@ node_modules
 util/
 *picasa.ini
 .DS_Store
+
+.jekyll-cache/
